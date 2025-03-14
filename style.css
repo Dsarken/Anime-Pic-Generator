@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2a3c;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(153, 102, 204, 0.4);
+  gap: 30px;
+}
+
+#title-text {
+  color: white;
+}
+
+.btn {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #ef233c;
+  box-shadow: 0 5px #d90429;
+}
+.btn:hover {
+  box-shadow: 0 3px #d90429;
+  top: 1px;
+}
+.btn:active {
+  box-shadow: 0 0 #d90429;
+  top: 5px;
+}
+
+.anime-portrait {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform-origin: center;
+  transition: 0.3s ease;
+}
+
+.anime-portrait:hover {
+  transform: scale(1.1);
+}
+
+.anime-portrait.enlarged {
+  position: fixed;
+  z-index: 999;
+  transform: scale(1.5);
+  border-style: none;
+  border-radius: 0%;
+  object-fit: contain;
+}
+
+.character-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+#download-btn {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
