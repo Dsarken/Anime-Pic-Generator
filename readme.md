@@ -8,6 +8,10 @@ This project is a web application that displays random anime characters fetched 
 - **Image Enlargement**: Click on the character's image to enlarge it for a closer view.
 - **Image Download**: While in enlarged mode, a "Download" button is available to save the character image.
 
+## Disclaimer
+
+Please note that some anime character images fetched from the Jikan API may be unavailable or of poor quality. This limitation depends on the data provided by the API.
+
 ## Technologies Used
 
 - **HTML**: Structure of the web application.
