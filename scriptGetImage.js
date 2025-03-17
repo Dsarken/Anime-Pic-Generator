@@ -35,3 +35,5 @@ async function displayRandomCharacter() {
     loadingIndicator.style.display = "none";
   }
 }
+
+displayRandomCharacter();
