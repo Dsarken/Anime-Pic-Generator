@@ -1,5 +1,6 @@
 const portrait = document.getElementById("anime-portrait");
 const characterName = document.getElementById("character-name");
+const loadingIndicator = document.getElementById("loading-indicator");
 
 async function getRandomAnimeCharacter() {
   try {
@@ -20,10 +21,18 @@ async function getRandomAnimeCharacter() {
 }
 
 async function displayRandomCharacter() {
+  loadingIndicator.style.display = "block";
+  portrait.style.display = "none";
+
   const randomCharacter = await getRandomAnimeCharacter();
   if (randomCharacter) {
     portrait.src = randomCharacter.imageUrl;
     characterName.textContent = randomCharacter.name;
+
+    loadingIndicator.style.display = "none";
+    portrait.style.display = "block";
+  } else {
+    loadingIndicator.style.display = "none";
   }
 }
 

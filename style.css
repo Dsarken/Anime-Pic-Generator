@@ -96,3 +96,9 @@ body {
   transform: translateX(-50%);
   z-index: 1000;
 }
+
+.loading-indicator {
+  display: none;
+  text-align: center;
+  margin: 20px auto;
+}
